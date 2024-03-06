@@ -1,0 +1,271 @@
+@media (max-width:768px ) {
+
+    .navbar-on-the-righthandside-profile{
+        overflow: hidden;
+
+        & .fa-bars{
+            font-size: clamp(1.3rem , 1.35vw , 1.4rem);
+            cursor: pointer;
+        }
+        & #navbar{
+            position: fixed;
+            width: 72%;
+            height: 100%;
+            background-color: hsla(260, 60%, 24%,0.04);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            top:0;
+            right: 0;
+            overflow-y: auto;
+            z-index: 1;
+
+            & #my-list-of-headers{
+                position: relative;
+                top: 20%;
+                display: flex;
+                flex-direction: column;
+                margin-left: clamp(2.5rem , 2.8vw , 3rem);
+                text-align: left;
+                row-gap: 1.5rem;
+                bottom: 5%;
+                
+
+                & .navbar-styling{
+                    --color-for-navbars:rgba(43, 24, 77, 0.9);
+                    /* text-decoration:none; */
+                    color: var(--color-for-navbars);
+                    font-size: clamp(1.1rem , 1.2vw , 1.3rem);
+                    
+                }
+
+            }
+
+            #close-tbn{
+                position: absolute;
+                top: 3%;
+                font-size: 2.5rem;
+                right: 10%;
+                color: rgba(43, 24, 77, 0.9);
+                cursor: pointer;
+            }
+        }
+        
+    }
+    
+}
+
+
+@media (orientation: landscape) and (max-height: 400px){
+
+    .navbar-on-the-righthandside-profile{
+        overflow: hidden;
+
+
+        & #navbar {
+            height: 90%;
+            overflow-y: auto;
+        }        
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:768px ){
+    .profile-name-and-navbar{
+        .profile-name-port{
+            .profile-name{
+                font-size: clamp(1.4rem , 2vw , 3rem);
+            }
+
+        }
+
+    }
+    
+    .navbar-on-the-righthandside-profile{
+        .fa-bars{
+            display: none;
+        }
+        #navbar{
+            display: block;
+
+            > #close-tbn{
+                display: none;
+            }
+
+            > #my-list-of-headers{
+                display: flex;
+                flex-direction: row;
+                column-gap: clamp(2rem , 2.5vw, 3rem);
+
+            }
+        }
+    }
+
+    #Home{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 50% 50%;
+        padding: 0rem 5vw;
+
+        .welcome-section-with-developer-type{
+            & h1{
+               font-size: clamp(2rem,2.5vw, 3rem); 
+               text-align: left;
+               padding: 0rem 0rem;
+            }
+            & .paragraph-underneath-heading-profile{
+                padding: 0rem 2vw 0rem 0rem;
+                text-align: left;
+                font-size: clamp(1.15rem , 1.2vw , 1.4rem);
+                vertical-align: middle;
+            }
+        }
+    }
+
+    #About-me{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 50% 50%;
+        padding: 0rem 4vw;
+
+        .explanation-of-the-illustration{
+            & .explanation-styling{
+                font-size:clamp(1.2rem , 1.3vw , 2rem);
+                padding: 0rem 2vw;
+            }
+        }
+    }
+
+    #Skills{
+        & h3{
+            font-size: clamp(1.8rem , 2.5vw, 4.5rem);
+
+        }
+    }
+
+    #Projects{
+        & h4{
+            font-size: clamp(1.8rem , 2.5vw, 4.5rem);
+            
+        }
+    }
+
+    #Contact{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 50% 50%;
+        grid-auto-flow: column-reverse;
+        
+        padding: 3vw 4vw;
+
+        & .copyright-license{
+            position: absolute;
+            bottom: 0;
+            margin: 1vw;
+        }
+    }
+
+}
+
+
+@media (min-width:1439px ){
+    .profile-name-and-navbar{
+        .profile-name-port{
+            .profile-name{
+                font-size: clamp(1.4rem , 2vw , 3rem);
+            }
+
+        }
+
+    }
+    
+    .navbar-on-the-righthandside-profile{
+        .fa-bars{
+            display: none;
+        }
+        #navbar{
+            display: block;
+
+            > #close-tbn{
+                display: none;
+            }
+
+            .my-list-of-headers{
+                display: flex;
+                flex-direction: row;
+                column-gap: clamp(2rem , 2.5vw, 3rem);
+
+            }
+        }
+    }
+
+    #Home{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 50% 50%;
+        padding: 0rem 5vw;
+        height: 85vh;
+
+        .welcome-section-with-developer-type{
+            & h1{
+               font-size: clamp(5rem,5vw, 5.2rem); 
+               text-align: left;
+               padding: 0rem 0rem;
+            }
+
+            & .paragraph-underneath-heading-profile{
+                padding: 0rem 2vw 0rem 0rem;
+                font-size: clamp(1.3rem , 1.3vw , 1.4rem);
+                vertical-align: middle;
+            }
+        }
+    }
+
+    #About-me{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 50% 50%;
+        padding: 0rem 4vw;
+
+        .explanation-of-the-illustration{
+            & .explanation-styling{
+                font-size: clamp(1.3rem , 1.3vw , 1.4rem);
+                padding: 0rem 2vw;
+            }
+        }
+    }
+
+    #Skills{
+        & h3{
+            font-size: clamp(1.8rem , 2.5vw, 4.5rem);
+
+        }
+    }
+
+    #Projects{
+        & h4{
+            font-size: clamp(1.8rem , 2.5vw, 4.5rem);
+            
+        }
+    }
+
+    #Contact{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 50% 50%;
+        padding: 3vw 4vw;
+        grid-auto-flow: column-reverse;
+
+        & .copyright-license{
+            position: absolute;
+            bottom: 0;
+            margin: 1vw;
+        }
+    }
+
+
+}
